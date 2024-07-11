@@ -1,0 +1,65 @@
+.programs {
+  margin: 80px auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.program img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+}
+
+.program {
+  flex-basis: 48%;
+  position: relative;
+  min-height: 300px;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.caption {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(152, 0, 0, 0.3); /* Reddish background */
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.6); /* Red shadow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  cursor: pointer;
+  padding: 20px; /* Adjust padding as needed */
+  text-align: center;
+  transition: 0.4s;
+}
+
+.caption img {
+  width: 60px;
+  margin-bottom: 10px;
+  opacity: 1; /* Make the icon always visible */
+}
+
+.caption h1 {
+  font-size: 2rem; /* Increase the font size of headings */
+  margin-bottom: 10px;
+  opacity: 1; /* Make the heading always visible */
+}
+
+.caption p {
+  font-size: 1.2rem; /* Increase the font size of paragraphs */
+  opacity: 0; /* Make paragraphs initially invisible */
+  transition: opacity 0.4s;
+}
+
+.program:hover .caption p {
+  opacity: 1; /* Show paragraphs on hover */
+}

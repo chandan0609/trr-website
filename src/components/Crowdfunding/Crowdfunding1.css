@@ -1,0 +1,105 @@
+.next-page {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../assets/Crowdfunding.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.next-page-left {
+  flex: 1;
+  padding: 250px;
+  margin-bottom: 150px;
+}
+
+.next-page-left h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: rgb(219, 52, 52);
+}
+
+.next-page-left p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.next-page-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.next-page-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+.prev-arrow,
+.next-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.prev-arrow {
+  left: 20px;
+  border-right: 40px solid rgba(255, 0, 0, 0.7);
+}
+
+.next-arrow {
+  right: 20px;
+  border-left: 40px solid rgba(255, 0, 0, 0.7);
+}
+
+.prev-arrow:hover,
+.next-arrow:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+/* .btn1 {
+  padding: 10px 20px;
+  margin-right: 300px;
+  margin-top: 200px;
+} */
+.contribution-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+  margin-left: 60px;
+}
+
+.btn1 {
+  background-color: red; /* Example button color */
+  color: white;
+  padding: 20px 30px;
+  border: rounded;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.btn1:hover {
+  background-color: darkred; /* Example hover color */
+}
